@@ -1,0 +1,967 @@
+body {
+    margin: 0 1rem;
+}
+
+.rankingcasinoexplanimg{
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// カジノ評価
+.game_info {
+    width: 100%;
+    height: 420px;
+    border-radius: 0.25;
+    box-shadow: 0 2px 30px rgba(black, 0.2);
+    background: lighten(white, 10%);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+
+    p {
+        display: none;
+    }
+}
+
+.wave {
+    opacity: 0.4;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    // background: #0af;
+    background: #ff3d7d;
+    width: 120%;
+    height: 30rem;
+    margin-left: -65%;
+    margin-top: -70%;
+    transform-origin: 50% 48%;
+    border-radius: 45%;
+    animation: drift 10000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 20000ms infinite linear;
+}
+
+.wave.-two {
+    animation: drift 15000ms infinite linear;
+    opacity: 0.1;
+    background: yellow;
+}
+
+.box:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, 0.5));
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+.game_scroe {
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-size: 6rem;
+    text-shadow: 0 2px 0 rgba(black, 0.1);
+}
+
+.game_star {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 31%;
+    letter-spacing: 0.2rem;
+}
+
+.ratingStar {
+    color: #ffcc00;
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+// scroe bar
+.game_info_bottom {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    padding: 0% 5% 0 5%;
+}
+
+.game_info_detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .game_info_title {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .progress {
+        margin: 3px;
+        width: 45%;
+    }
+}
+
+// カジノ開催中人気イベント
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.verajohn_blue {
+    // background-color: #009ee7 !important;
+    background-color: #ff6500 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .casino_card {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.card-background {
+    position: absolute;
+    top: 17%;
+}
+
+.card-header {
+    padding: 0.75rem 0.5rem;
+    text-shadow: 1px 1px 5px black;
+}
+
+.casino_content_h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    margin: 0 !important;
+}
+
+.casino_button_h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+    line-height: 1.5;
+    color: white;
+    margin: 0 !important;
+}
+
+.casino_content_kiji {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.casino_about_title {
+    background-color: black;
+    text-shadow: 1px 1px 5px black;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    color: white;
+    padding: 3% 3%;
+}
+
+.casino_about_ul {
+    list-style-type: none;
+    padding-inline-start: 2% !important;
+}
+
+.casino_about_ul li::before {
+    font-family: "Font Awesome 5 Free" !important;
+    content: "\f105" !important;
+    font-weight: 700 !important;
+    margin-right: 2%;
+    color: #5c9ee7 !important;
+}
+
+.casino_about_content {
+    background-color: white;
+}
+
+// オンラインカジノとは
+.verajohn_title {
+    background-image: -webkit-linear-gradient(bottom, #bb116d 0%, #e51e8d 25%, #ed30a3 50%, #f444b8 85%, #fa57cc 100%);
+    display: flex;
+    padding: 3% 3%;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.verajohn_content {
+    padding: 5%;
+}
+
+.space-content-section img {
+    border-radius: 0px;
+}
+
+.casino_buttom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.verajohn_homepage {
+    width: 49%;
+    background-image: -webkit-linear-gradient(bottom, #bb116d 0%, #e51e8d 25%, #ed30a3 50%, #f444b8 85%, #fa57cc 100%);
+    color: white !important;
+    text-shadow: 1px 1px 5px black;
+    text-decoration-line: none !important;
+}
+
+// キラキラバタン
+.neonbutton {
+    position: relative;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    // transition: all 6s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.neonbutton::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 300%;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(-20deg);
+    animation: shine 4s ease infinite;
+}
+
+.neonbutton2 {
+    position: relative;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    // transition: all 6s ease;
+    text-align: center;
+    overflow: hidden;
+}
+
+.neonbutton2::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 300%;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(-20deg);
+    animation: shine 4s ease infinite;
+    animation-delay: 2s;
+}
+
+@keyframes shine {
+    0% {
+        top: -20%;
+        left: -20%;
+    }
+    100% {
+        top: -20%;
+        left: 150%;
+    }
+}
+
+.verajohn_homepage:hover {
+    color: white;
+    background-image: linear-gradient(to top, #fa57cc 0%, #f444b8 25%, #ed30a3 50%, #e51e8d 85%, #bb116d 100%);
+}
+
+.casino_homepange_smTitle {
+    font-size: 0.8rem;
+}
+
+.casino_homepange_bgTitle {
+    font-size: 1.2rem;
+}
+
+.verajohn_login {
+    width: 49%;
+    background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
+    color: white !important;
+    text-shadow: 1px 1px 5px black;
+    text-decoration-line: none !important;
+}
+
+.verajohn_login:hover {
+    color: white;
+    background: linear-gradient(to bottom, #f7901d 0%, #ffc933 100%);
+}
+
+// オンラインカジノ決済方法
+.paymentway {
+    padding: 1rem;
+    background-color: black;
+    // background-image: -webkit-linear-gradient(bottom, #4b2880 0%, #5e3e90 25%, #754cb1 50%, #8d58dc 85%, #7952b3 100%);
+
+    .paymentway_h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0rem;
+        line-height: 1.5;
+        text-align: left;
+        font-weight: bold;
+        color: white;
+        margin: 0 !important;
+    }
+}
+
+.payment_header {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 1rem 0.5rem !important;
+}
+
+.btn:hover {
+    text-decoration: none !important;
+}
+
+.paymentway_header {
+    padding: 0 !important;
+    text-shadow: none;
+}
+
+.paymentway_header:active {
+    background: lighten(#ff3d7d, 10%);
+}
+
+.verajohn_4point_img {
+    img {
+        width: 100%;
+    }
+}
+
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.payment_logo_flex {
+    display: flex;
+}
+
+.payment_logo {
+    width: 80px;
+    height: 32px;
+}
+
+.payment_logo2 {
+    width: 120px;
+}
+
+.payment_icon {
+    display: flex;
+}
+
+.payment_dropdown_menu {
+    padding-right: 16px;
+}
+
+.payment_dropdown_menu::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    right: 50%;
+    border-style: solid;
+    transform: translateY(-60%) rotate(-45deg);
+}
+
+.payment_dropdown_outline::after {
+    width: 8px;
+    height: 8px;
+    border-bottom-width: 1.5px;
+    border-left-width: 1.5px;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom-color: #757575;
+    border-left-color: #757575;
+}
+
+.payment_dropdown_menu2 {
+    position: relative;
+    padding-right: 16px;
+}
+
+.payment_dropdown_menu2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    border-style: solid;
+    transform: translateY(-60%) rotate(-45deg);
+}
+
+.payment_dropdown_outline2::after {
+    width: 8px;
+    height: 8px;
+    border-bottom-width: 1.5px;
+    border-left-width: 1.5px;
+    border-top: transparent;
+    border-right: transparent;
+    border-bottom-color: black;
+    border-left-color: black;
+}
+
+.payment_dropup_menu2 {
+    position: relative;
+    padding-right: 16px;
+}
+
+.payment_dropup_menu2::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 1%;
+    border-style: solid;
+    transform: translateY(-60%) rotate(135deg);
+}
+
+.dropdown-toggle::after {
+    margin-top: 1rem;
+}
+
+.dropdown-toggle2 {
+    white-space: nowrap;
+}
+
+.dropdown-toggle2::after {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+    transform: translateY(-85%) rotate(180deg);
+}
+
+.payment_deposit {
+    width: 45px;
+    height: 38px;
+    padding: 5px;
+    border-radius: 0.25rem;
+    color: #ffff;
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.payment_withdrawal {
+    width: 45px;
+    height: 38px;
+    padding: 5px;
+    border-radius: 0.25rem;
+    color: #ffff;
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.payment_success {
+    background-color: #e83f60;
+}
+
+.payment_success_five {
+    color: white;
+    font-weight: bold;
+    background-image: url("/img/toppage/success_cicle.png");
+}
+
+.payment_failed_five {
+    color: white;
+    font-weight: bold;
+    background-image: url("/img/toppage/failed.png");
+}
+
+.payment_none {
+    background-color: #dcdcdc;
+}
+
+.withdrawal_success {
+    background-color: #00913b;
+}
+
+.pull-right {
+    float: right;
+}
+
+// オンラインカジノ記事
+.casino_kiji_all {
+    display: flex;
+
+    .casino_kiji_IMG {
+        padding-left: 0%;
+
+        br {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .casino_kiji_text {
+        padding-left: 2px;
+
+        p {
+            display: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            :hover {
+                color: #dc0610;
+            }
+        }
+
+        .casino_kiji_title {
+            font-weight: bold;
+        }
+
+        .casino_kiji_description {
+            display: none;
+        }
+
+        .casino_kiji_time {
+            color: #9e9e9e;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+// .casino_kiji_all::after {
+//     background: #e0e0e0;
+//     position: absolute;
+//     content: "";
+//     bottom: -16px;
+//     height: 1px;
+//     left: 15px;
+//     width: calc(100% - 30px);
+// }
+
+// オンラインカジノ徹底解説　目次
+.casino_about_ul ul {
+    padding-inline-start: 2%;
+    list-style-type: none;
+
+    a {
+        color: #0071bc;
+        font-weight: bolder;
+        text-decoration-line: none;
+    }
+
+    li {
+        padding-inline-start: 6%;
+
+        a {
+            font-size: 0.8rem;
+            color: #00375e;
+            text-decoration-line: none;
+        }
+    }
+}
+
+// ポイント１
+.point_1 {
+    position: relative;
+    // padding: 2px 5px 2px 50px;
+    padding: 0.7em 0.7em 0em 0.7em;
+    color: #010101;/*文字色*/
+    background: #ffe5ee;/*背景色*/
+    border-bottom: solid 3px #ff3d7d;/*下線*/
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-left: 40px;
+    }
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f0a1";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #ff6363;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: 0em;
+        // top: 40%;
+        top:50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+    }
+
+    // ::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     top: 2.7rem;
+    //     width: 100%;
+    //     height: 7px;
+    //     background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    //     background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    // }
+}
+
+.point_2 {
+    position: relative;
+    padding: 2px 5px 2px 50px;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f51e";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #ff6363;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: 0em;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2.6rem;
+        width: 100%;
+        height: 7px;
+        background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+        background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    }
+}
+
+.point_3 {
+    position: relative;
+    padding: 2px 5px 2px 50px;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f3cd";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #ff6363;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: 0em;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2.6rem;
+        width: 100%;
+        height: 7px;
+        background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+        background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    }
+}
+
+.point_4 {
+    position: relative;
+    padding: 2px 5px 2px 50px;
+
+    h2 {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f4d3";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #ff6363;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: 0em;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2.6rem;
+        width: 100%;
+        height: 7px;
+        background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+        background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    }
+}
+
+.casino_login_way {
+    position: relative;
+    padding: 2px 5px 2px 50px;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: bolder;
+    }
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f2f6";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #ff6363;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: 0em;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 2.6rem;
+        width: 100%;
+        height: 7px;
+        background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+        background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    }
+}
+
+.point1_IMG IMG {
+    width: 100%;
+}
+
+// 引用
+.casino_blockquote {
+    position: relative;
+    padding: 7px 16px;
+    box-sizing: border-box;
+    color: #585858;
+    border: solid 3px #72ccf4;
+
+    ::before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f10d";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #72ccf4;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        left: -15px;
+        top: 0px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    ::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f10e";
+        display: inline-block;
+        line-height: 40px;
+        position: absolute;
+        padding: 0em;
+        color: white;
+        background: #72ccf4;
+        font-weight: 900;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        right: -15px;
+        top: 100%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    .blockquote_p {
+        padding: 0;
+        margin: 10px 0;
+        line-height: 1.7;
+        font-weight: bold;
+    }
+}
+
+.blockquote_blue {
+    color: #ff3d7d;
+    font-weight: bold;
+}
+
+.blockquote_check {
+    position: relative;
+    color: black;
+    font-size: 1.3rem;
+    background: #d0ecff;
+    line-height: 1.4;
+    padding: 0.25em 0.5em;
+    margin: 2em 0 0.5em;
+    border-radius: 0 5px 5px 5px;
+}
+
+.blockquote_check:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free", "Quicksand", "Avenir", "Arial", sans-serif;
+    font-weight: 900;
+    content: "\f00c Check";
+    background: #2196f3;
+    color: #fff;
+    left: 0px;
+    bottom: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 3px 7px 1px;
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+}
+
+.blockquote_table {
+    table {
+        display: block;
+        overflow-x: scroll;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        border-collapse: collapse;
+        width: 100%;
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    }
+}
+
+// 専用モバイルカジノ
+.verajohn_mobile {
+    h3 {
+        font-size: 1.1rem;
+        color: #010079;
+        text-shadow: 0 0 5px white;
+        border-left: solid 7px #010079;
+        background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+        background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+    }
+
+    .mobile_method_gif {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 60%;
+        }
+    }
+
+    .verajohn_mobile_method {
+        padding-inline-start: 10%;
+        list-style-type: decimal;
+        line-height: 2rem;
+    }
+}

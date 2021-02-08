@@ -1,0 +1,1013 @@
+@charset "UTF-8";
+body {
+  margin: 0 1rem;
+}
+
+.rankingcasinoexplanimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.game_info {
+  width: 100%;
+  height: 420px;
+  border-radius: 0.25;
+  -webkit-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background: white;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.game_info p {
+  display: none;
+}
+
+.wave {
+  opacity: 0.4;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  background: #ff3d7d;
+  width: 120%;
+  height: 30rem;
+  margin-left: -65%;
+  margin-top: -70%;
+  -webkit-transform-origin: 50% 48%;
+          transform-origin: 50% 48%;
+  border-radius: 45%;
+  -webkit-animation: drift 10000ms infinite linear;
+          animation: drift 10000ms infinite linear;
+}
+
+.wave.-three {
+  -webkit-animation: drift 20000ms infinite linear;
+          animation: drift 20000ms infinite linear;
+}
+
+.wave.-two {
+  -webkit-animation: drift 15000ms infinite linear;
+          animation: drift 15000ms infinite linear;
+  opacity: 0.1;
+  background: yellow;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ee88aa), color-stop(80%, rgba(221, 238, 255, 0)), to(rgba(255, 255, 255, 0.5)));
+  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
+  z-index: 11;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.game_scroe {
+  position: absolute;
+  bottom: 45%;
+  width: 100%;
+  z-index: 1;
+  line-height: 300px;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: white;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.game_star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 31%;
+  letter-spacing: 0.2rem;
+}
+
+.ratingStar {
+  color: #ffcc00;
+}
+
+@-webkit-keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes drift {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.game_info_bottom {
+  position: absolute;
+  width: 100%;
+  top: 65%;
+  padding: 0% 5% 0 5%;
+}
+
+.game_info_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game_info_detail .game_info_title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.game_info_detail .progress {
+  margin: 3px;
+  width: 45%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.verajohn_blue {
+  background-color: #ff6500 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .casino_card {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-background {
+  position: absolute;
+  top: 17%;
+}
+
+.card-header {
+  padding: 0.75rem 0.5rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+.casino_content_h2 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0 !important;
+}
+
+.casino_button_h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0 !important;
+}
+
+.casino_content_kiji {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.casino_about_title {
+  background-color: black;
+  text-shadow: 1px 1px 5px black;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: white;
+  padding: 3% 3%;
+}
+
+.casino_about_ul {
+  list-style-type: none;
+  -webkit-padding-start: 2% !important;
+          padding-inline-start: 2% !important;
+}
+
+.casino_about_ul li::before {
+  font-family: "Font Awesome 5 Free" !important;
+  content: "\f105" !important;
+  font-weight: 700 !important;
+  margin-right: 2%;
+  color: #5c9ee7 !important;
+}
+
+.casino_about_content {
+  background-color: white;
+}
+
+.verajohn_title {
+  background-image: -webkit-linear-gradient(bottom, #bb116d 0%, #e51e8d 25%, #ed30a3 50%, #f444b8 85%, #fa57cc 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3% 3%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.verajohn_content {
+  padding: 5%;
+}
+
+.space-content-section img {
+  border-radius: 0px;
+}
+
+.casino_buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.verajohn_homepage {
+  width: 49%;
+  background-image: -webkit-linear-gradient(bottom, #bb116d 0%, #e51e8d 25%, #ed30a3 50%, #f444b8 85%, #fa57cc 100%);
+  color: white !important;
+  text-shadow: 1px 1px 5px black;
+  -webkit-text-decoration-line: none !important;
+          text-decoration-line: none !important;
+}
+
+.neonbutton {
+  position: relative;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.neonbutton::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 300%;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: shine 4s ease infinite;
+          animation: shine 4s ease infinite;
+}
+
+.neonbutton2 {
+  position: relative;
+  display: block;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.neonbutton2::before {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: -20px;
+  content: "";
+  height: 300%;
+  width: 20%;
+  background: rgba(255, 255, 255, 0.25);
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: shine 4s ease infinite;
+          animation: shine 4s ease infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes shine {
+  0% {
+    top: -20%;
+    left: -20%;
+  }
+  100% {
+    top: -20%;
+    left: 150%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    top: -20%;
+    left: -20%;
+  }
+  100% {
+    top: -20%;
+    left: 150%;
+  }
+}
+
+.verajohn_homepage:hover {
+  color: white;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fa57cc), color-stop(25%, #f444b8), color-stop(50%, #ed30a3), color-stop(85%, #e51e8d), to(#bb116d));
+  background-image: linear-gradient(to top, #fa57cc 0%, #f444b8 25%, #ed30a3 50%, #e51e8d 85%, #bb116d 100%);
+}
+
+.casino_homepange_smTitle {
+  font-size: 0.8rem;
+}
+
+.casino_homepange_bgTitle {
+  font-size: 1.2rem;
+}
+
+.verajohn_login {
+  width: 49%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc933), to(#f7901d));
+  background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
+  color: white !important;
+  text-shadow: 1px 1px 5px black;
+  -webkit-text-decoration-line: none !important;
+          text-decoration-line: none !important;
+}
+
+.verajohn_login:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7901d), to(#ffc933));
+  background: linear-gradient(to bottom, #f7901d 0%, #ffc933 100%);
+}
+
+.paymentway {
+  padding: 1rem;
+  background-color: black;
+}
+
+.paymentway .paymentway_h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  margin: 0 !important;
+}
+
+.payment_header {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0.5rem !important;
+}
+
+.btn:hover {
+  text-decoration: none !important;
+}
+
+.paymentway_header {
+  padding: 0 !important;
+  text-shadow: none;
+}
+
+.paymentway_header:active {
+  background: #ff709f;
+}
+
+.verajohn_4point_img img {
+  width: 100%;
+}
+
+.btn.focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.payment_logo_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.payment_logo {
+  width: 80px;
+  height: 32px;
+}
+
+.payment_logo2 {
+  width: 120px;
+}
+
+.payment_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.payment_dropdown_menu {
+  padding-right: 16px;
+}
+
+.payment_dropdown_menu::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 50%;
+  border-style: solid;
+  -webkit-transform: translateY(-60%) rotate(-45deg);
+          transform: translateY(-60%) rotate(-45deg);
+}
+
+.payment_dropdown_outline::after {
+  width: 8px;
+  height: 8px;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom-color: #757575;
+  border-left-color: #757575;
+}
+
+.payment_dropdown_menu2 {
+  position: relative;
+  padding-right: 16px;
+}
+
+.payment_dropdown_menu2::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 1%;
+  border-style: solid;
+  -webkit-transform: translateY(-60%) rotate(-45deg);
+          transform: translateY(-60%) rotate(-45deg);
+}
+
+.payment_dropdown_outline2::after {
+  width: 8px;
+  height: 8px;
+  border-bottom-width: 1.5px;
+  border-left-width: 1.5px;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom-color: black;
+  border-left-color: black;
+}
+
+.payment_dropup_menu2 {
+  position: relative;
+  padding-right: 16px;
+}
+
+.payment_dropup_menu2::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 1%;
+  border-style: solid;
+  -webkit-transform: translateY(-60%) rotate(135deg);
+          transform: translateY(-60%) rotate(135deg);
+}
+
+.dropdown-toggle::after {
+  margin-top: 1rem;
+}
+
+.dropdown-toggle2 {
+  white-space: nowrap;
+}
+
+.dropdown-toggle2::after {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  -webkit-transform: translateY(-85%) rotate(180deg);
+          transform: translateY(-85%) rotate(180deg);
+}
+
+.payment_deposit {
+  width: 45px;
+  height: 38px;
+  padding: 5px;
+  border-radius: 0.25rem;
+  color: #ffff;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.payment_withdrawal {
+  width: 45px;
+  height: 38px;
+  padding: 5px;
+  border-radius: 0.25rem;
+  color: #ffff;
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.payment_success {
+  background-color: #e83f60;
+}
+
+.payment_success_five {
+  color: white;
+  font-weight: bold;
+  background-image: url("/img/toppage/success_cicle.png");
+}
+
+.payment_failed_five {
+  color: white;
+  font-weight: bold;
+  background-image: url("/img/toppage/failed.png");
+}
+
+.payment_none {
+  background-color: #dcdcdc;
+}
+
+.withdrawal_success {
+  background-color: #00913b;
+}
+
+.pull-right {
+  float: right;
+}
+
+.casino_kiji_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.casino_kiji_all .casino_kiji_IMG {
+  padding-left: 0%;
+}
+
+.casino_kiji_all .casino_kiji_IMG br {
+  display: none;
+}
+
+.casino_kiji_all .casino_kiji_IMG img {
+  width: 100%;
+}
+
+.casino_kiji_all .casino_kiji_text {
+  padding-left: 2px;
+}
+
+.casino_kiji_all .casino_kiji_text p {
+  display: none;
+}
+
+.casino_kiji_all .casino_kiji_text a {
+  color: black;
+  text-decoration: none;
+}
+
+.casino_kiji_all .casino_kiji_text a :hover {
+  color: #dc0610;
+}
+
+.casino_kiji_all .casino_kiji_text .casino_kiji_title {
+  font-weight: bold;
+}
+
+.casino_kiji_all .casino_kiji_text .casino_kiji_description {
+  display: none;
+}
+
+.casino_kiji_all .casino_kiji_text .casino_kiji_time {
+  color: #9e9e9e;
+  font-size: 0.7rem;
+}
+
+.casino_about_ul ul {
+  -webkit-padding-start: 2%;
+          padding-inline-start: 2%;
+  list-style-type: none;
+}
+
+.casino_about_ul ul a {
+  color: #0071bc;
+  font-weight: bolder;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.casino_about_ul ul li {
+  -webkit-padding-start: 6%;
+          padding-inline-start: 6%;
+}
+
+.casino_about_ul ul li a {
+  font-size: 0.8rem;
+  color: #00375e;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.point_1 {
+  position: relative;
+  padding: 0.7em 0.7em 0em 0.7em;
+  color: #010101;
+  /*文字色*/
+  background: #ffe5ee;
+  /*背景色*/
+  border-bottom: solid 3px #ff3d7d;
+  /*下線*/
+}
+
+.point_1 h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-left: 40px;
+}
+
+.point_1 ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a1";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ff6363;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 0em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.point_2 {
+  position: relative;
+  padding: 2px 5px 2px 50px;
+}
+
+.point_2 h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.point_2 ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f51e";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ff6363;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 0em;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.point_2 ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+.point_3 {
+  position: relative;
+  padding: 2px 5px 2px 50px;
+}
+
+.point_3 h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.point_3 ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f3cd";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ff6363;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 0em;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.point_3 ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+.point_4 {
+  position: relative;
+  padding: 2px 5px 2px 50px;
+}
+
+.point_4 h2 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.point_4 ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f4d3";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ff6363;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 0em;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.point_4 ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+.casino_login_way {
+  position: relative;
+  padding: 2px 5px 2px 50px;
+}
+
+.casino_login_way h2 {
+  font-size: 1.3rem;
+  font-weight: bolder;
+}
+
+.casino_login_way ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f2f6";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ff6363;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 0em;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+}
+
+.casino_login_way ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.6rem;
+  width: 100%;
+  height: 7px;
+  background: -webkit-repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+  background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+}
+
+.point1_IMG IMG {
+  width: 100%;
+}
+
+.casino_blockquote {
+  position: relative;
+  padding: 7px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #585858;
+  border: solid 3px #72ccf4;
+}
+
+.casino_blockquote ::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10d";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #72ccf4;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: -15px;
+  top: 0px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.casino_blockquote ::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f10e";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #72ccf4;
+  font-weight: 900;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  right: -15px;
+  top: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.casino_blockquote .blockquote_p {
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+  font-weight: bold;
+}
+
+.blockquote_blue {
+  color: #ff3d7d;
+  font-weight: bold;
+}
+
+.blockquote_check {
+  position: relative;
+  color: black;
+  font-size: 1.3rem;
+  background: #d0ecff;
+  line-height: 1.4;
+  padding: 0.25em 0.5em;
+  margin: 2em 0 0.5em;
+  border-radius: 0 5px 5px 5px;
+}
+
+.blockquote_check:after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free", "Quicksand", "Avenir", "Arial", sans-serif;
+  font-weight: 900;
+  content: "\f00c Check";
+  background: #2196f3;
+  color: #fff;
+  left: 0px;
+  bottom: 100%;
+  border-radius: 5px 5px 0 0;
+  padding: 3px 7px 1px;
+  font-size: 0.7em;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.blockquote_table table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.blockquote_table table td,
+.blockquote_table table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.blockquote_table table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.verajohn_mobile h3 {
+  font-size: 1.1rem;
+  color: #010079;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #010079;
+  background: -webkit-repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #cce7ff, #cce7ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+}
+
+.verajohn_mobile .mobile_method_gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.verajohn_mobile .mobile_method_gif img {
+  width: 60%;
+}
+
+.verajohn_mobile .verajohn_mobile_method {
+  -webkit-padding-start: 10%;
+          padding-inline-start: 10%;
+  list-style-type: decimal;
+  line-height: 2rem;
+}
+/*# sourceMappingURL=ranking_info.css.map */

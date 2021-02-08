@@ -1,0 +1,459 @@
+img[lazy="loading"] {
+  opacity: 0;
+}
+
+img[lazy="loaded"] {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.morecasino_tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.morecasino_tag .morecasino_tag_btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb9cd), to(#ff4276));
+  background: linear-gradient(to bottom, #ffb9cd 0%, #ff4276 100%);
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #555;
+  border: 2px solid #ff91af;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+}
+
+.morecasino_tag .morecasino_tag_btn:focus {
+  outline: none;
+}
+
+.morecasino_tag .morecasino_tag_btn:hover {
+  opacity: 0.8;
+}
+
+.changeimgdeg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.morecasinocasitabi_line {
+  border-color: #0d2858 !important;
+}
+
+.morecasinocasitabi_bg {
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/casitabibgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinoblack_line {
+  border-color: #000 !important;
+}
+
+.morecasinoblack_bg {
+  background-color: #000 !important;
+}
+
+.morecasinocasinosecret_line {
+  border-color: #17a5e7 !important;
+}
+
+.morecasinocasinosecret_bg {
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/casinosecretbgpc.png");
+  background-size: cover;
+}
+
+.morecasinointercasino_line {
+  border: 0px solid !important;
+  padding: 1rem;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#8404d9), to(#f20574));
+  background: linear-gradient(to right, #8404d9, #f20574);
+  padding: 4px;
+}
+
+.morecasinointercasino_line .morecasinointercasino_r {
+  background-color: #ffffff;
+  border-radius: 0rem 0.3rem 0.3rem 0rem;
+}
+
+.morecasinointercasino_bg {
+  background-color: #36363600 !important;
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinoqueencasino_bg {
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/queencasinobgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinonetbet_line {
+  border-color: #333743 !important;
+}
+
+.morecasinonetbet_bg {
+  background-color: #333743 !important;
+}
+
+.morecasinowildjungle_line {
+  border-color: #073701 !important;
+}
+
+.morecasinowildjungle_bg {
+  background-color: #073701 !important;
+}
+
+.morecasinowilliamhill_line {
+  border-color: #001b5f !important;
+}
+
+.morecasinowilliamhill_bg {
+  background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/williamhillbgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinolivecasinohouse_line {
+  border-color: #490303 !important;
+}
+
+.morecasinolivecasinohouse_bg {
+  background-image: linear-gradient(to top, #490303, rgba(53, 53, 53, 0) 4px), linear-gradient(to right, rgba(0, 0, 0, 0.2) 0, transparent 3px), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0, transparent 3px), radial-gradient(closest-side, #810000, #490303);
+  background-size: cover;
+}
+
+.morecasinoluckycasino_line {
+  border-color: #4a1b5f !important;
+}
+
+.morecasinoluckycasino_bg {
+  background-image: url("/IMG/mainIMG/luckycasinobgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinojoycasino_line {
+  border-color: #4a1b5f !important;
+}
+
+.morecasinojoycasino_bg {
+  background-image: url("/IMG/mainIMG/joycasinobgpc.jpg");
+  background-size: cover;
+}
+
+.morecasinoempire777_line {
+  border-color: #fad026 !important;
+}
+
+.morecasinoempire777_bg {
+  background-image: url("/IMG/mainIMG/empire777bgpc.png");
+  background-size: cover;
+}
+
+.morecasinowildz_line {
+  border-color: #412786 !important;
+}
+
+.morecasinowildz_bg {
+  background-image: url("/IMG/mainIMG/wildzcasinobgpc.png");
+  background-size: cover;
+}
+
+.morecasino_list .morecasino_list_row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2,
+.morecasino_list .morecasino_list_row .col-3 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_btn,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_btn {
+  background-color: #fff0;
+  padding: 0;
+  border: 0;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_btn:focus,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_btn:focus {
+  outline: none;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_casino,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_casino {
+  border: 1px solid #d8d8d8;
+  padding: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_casino img,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_casino img {
+  width: 100%;
+  height: 100%;
+}
+
+.morecasino_list .morecasino_list_row .col-sm-2 .morecasino_list_casino:hover,
+.morecasino_list .morecasino_list_row .col-3 .morecasino_list_casino:hover {
+  background-color: #ff3d7d26;
+}
+
+.morecasinopage {
+  border: 4px solid;
+  border-radius: 0.7rem;
+}
+
+.morecasinopage .morecasinopage_row {
+  margin-left: 0px;
+  margin-right: 0px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l {
+  background-color: #363636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 20px 27px;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_IMG {
+  width: 100%;
+  height: 100%;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_bonus {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play {
+  margin-top: 20px;
+  background-color: #2b70ff;
+  display: inline-block;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 14px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.27);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.27);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play:hover {
+  background-color: #215bd3;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r {
+  padding: 25px 15px;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title h3 {
+  font-weight: bold;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title .morecasinopage_r_more {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5rem;
+  background-color: #57c15c;
+  padding: 0px 10px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title .morecasinopage_r_more:hover {
+  text-decoration: none;
+  background-color: #40a145;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_point {
+  margin-top: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_point ul {
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_point ul li {
+  margin-bottom: 5px;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_payments .morecasinopage_r_paymentstitle {
+  color: #40a145;
+  font-weight: bold;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_payments .morecasinopage_r_paymentsicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_payments .morecasinopage_r_paymentsicon .r_paymentsicon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 46px;
+  height: 30px;
+  margin: 3px 2px;
+  border-radius: 2px;
+  background-color: #f4f5f5;
+  -webkit-box-shadow: 0 2px 0 0 #d3d2d2;
+          box-shadow: 0 2px 0 0 #d3d2d2;
+}
+
+.morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_payments .morecasinopage_r_paymentsicon .r_paymentsicon img {
+  width: 45px;
+  height: 100%;
+  padding: 0px 1px;
+}
+
+@media screen and (max-width: 1024px) {
+  .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_bonus {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .morecasinopage .morecasinopage_row .morecasinopage_l {
+    padding: 30px 27px;
+  }
+  .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_bonus {
+    font-size: 1rem;
+  }
+  .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .morecasinopage .morecasinopage_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .morecasinocasinosecret_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/casinosecretbg.png");
+    background-size: cover;
+  }
+  .morecasinointercasino_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/intercasinobg.jpg");
+  }
+  .morecasinopage .morecasinopage_row .morecasinopage_l {
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+  }
+  .morecasinointercasino_line .morecasinointercasino_r {
+    background-color: #ffffff;
+    border-radius: 0rem 0rem 0.3rem 0.3rem;
+  }
+  .morecasinocasitabi_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/casitabibg.jpg");
+    background-size: cover;
+  }
+  .morecasinoqueencasino_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/queencasinobg.png");
+    background-size: cover;
+  }
+  .morecasinonetbet_bg {
+    background-color: #fff0 !important;
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/netbetbg.png");
+    background-size: cover;
+  }
+  .morecasinowilliamhill_bg {
+    background-image: url("https://onlinecasino-walker.com/wp-content/uploads/2021/01/williamhillbg.jpg");
+  }
+  .morecasinoluckycasino_bg {
+    background-image: url("/IMG/mainIMG/luckycasinobg.jpg");
+    background-size: cover;
+  }
+  .morecasinojoycasino_bg {
+    background-image: url("/IMG/mainIMG/joycasinobg.jpg");
+    background-size: cover;
+  }
+  .morecasinoempire777_bg {
+    background-image: url("/IMG/mainIMG/empire777bg.png");
+    background-size: cover;
+  }
+  .morecasinowildz_bg {
+    background-image: url("/IMG/mainIMG/wildzcasinobg.png");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .morecasinopage .morecasinopage_row .morecasinopage_l {
+    padding: 30px 27px;
+  }
+  .morecasinopage .morecasinopage_row .morecasinopage_l .morecasinopage_l_play {
+    font-size: 0.9rem;
+  }
+  .morecasinopage .morecasinopage_row .morecasinopage_r .morecasinopage_r_title h3 {
+    font-size: 1.3rem;
+  }
+}
+/*# sourceMappingURL=morecasinoCSS.css.map */
