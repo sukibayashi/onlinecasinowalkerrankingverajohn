@@ -9,6 +9,29 @@ body {
     }
 }
 
+.casinoinfo_card_pink {
+    background-image: linear-gradient(270deg, #ff77a4 0%, #ff3d7d 100%) !important;
+}
+
+// パンフレット
+.casinoshortinfo {
+    .casinoshortinfo_title {
+        font-size: 1.4rem;
+        margin-bottom: 1em;
+        font-weight: bold;
+        border-left: 6px #ff3d7d solid;
+        padding-left: 2%;
+        line-height: 1.42;
+    }
+}
+
+// 決済方法について
+.casinoinfopayment_arrow {
+    color: #86868b;
+    float: right;
+    padding-bottom: 20px;
+}
+
 .casinoinfopaymentintro {
     .tablesticky {
         display: flex;
@@ -45,11 +68,11 @@ body {
             overflow: auto;
             flex-grow: 0;
 
-            .tablestickyr_ps{
+            .tablestickyr_ps {
                 padding: 0 17px !important;
             }
 
-            .tablestickyr_p10{
+            .tablestickyr_p10 {
                 padding: 0 10px !important;
             }
 
@@ -230,8 +253,7 @@ body {
 }
 
 .casino_about_title {
-    background-color: black;
-    text-shadow: 1px 1px 5px black;
+    background-color: #ff3d7d;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
     color: white;
@@ -379,7 +401,7 @@ body {
     background-color: #ff3d7d;
     // background-image: -webkit-linear-gradient(bottom, #4b2880 0%, #5e3e90 25%, #754cb1 50%, #8d58dc 85%, #7952b3 100%);
 
-    .paymentway_h2 {
+    .paymentway_h3 {
         font-size: 1.05rem;
         margin-bottom: 0rem;
         line-height: 1.5;

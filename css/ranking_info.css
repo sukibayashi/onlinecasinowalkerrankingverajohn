@@ -8,6 +8,26 @@ body {
   height: 100%;
 }
 
+.casinoinfo_card_pink {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff77a4), to(#ff3d7d)) !important;
+  background-image: linear-gradient(270deg, #ff77a4 0%, #ff3d7d 100%) !important;
+}
+
+.casinoshortinfo .casinoshortinfo_title {
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+  font-weight: bold;
+  border-left: 6px #ff3d7d solid;
+  padding-left: 2%;
+  line-height: 1.42;
+}
+
+.casinoinfopayment_arrow {
+  color: #86868b;
+  float: right;
+  padding-bottom: 20px;
+}
+
 .casinoinfopaymentintro .tablesticky {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,8 +280,7 @@ body {
 }
 
 .casino_about_title {
-  background-color: black;
-  text-shadow: 1px 1px 5px black;
+  background-color: #ff3d7d;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   color: white;
@@ -434,7 +453,7 @@ body {
   background-color: #ff3d7d;
 }
 
-.paymentway .paymentway_h2 {
+.paymentway .paymentway_h3 {
   font-size: 1.05rem;
   margin-bottom: 0rem;
   line-height: 1.5;
