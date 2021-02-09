@@ -1,11 +1,59 @@
 @charset "UTF-8";
 body {
-  margin: 0 1rem;
+  margin: 0 auto;
 }
 
 .rankingcasinoexplanimg img {
   width: 100%;
   height: 100%;
+}
+
+.casinoinfopaymentintro {
+  overflow: auto;
+}
+
+.casinoinfopaymentintro .tablesticky {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.casinoinfopaymentintro .tablesticky tbody,
+.casinoinfopaymentintro .tablesticky td,
+.casinoinfopaymentintro .tablesticky tfoot,
+.casinoinfopaymentintro .tablesticky th,
+.casinoinfopaymentintro .tablesticky thead,
+.casinoinfopaymentintro .tablesticky tr {
+  height: 55px;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_l {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 130px;
+  top: 40px;
+  left: 0;
+  color: white;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_l .casinoinfointro_payment img {
+  width: 46px;
+  height: 100%;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_r {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .game_info {
@@ -375,12 +423,12 @@ body {
 }
 
 .paymentway {
-  padding: 1rem;
-  background-color: black;
+  padding: 0.5rem;
+  background-color: #ff3d7d;
 }
 
 .paymentway .paymentway_h2 {
-  font-size: 1.3rem;
+  font-size: 1.05rem;
   margin-bottom: 0rem;
   line-height: 1.5;
   text-align: left;

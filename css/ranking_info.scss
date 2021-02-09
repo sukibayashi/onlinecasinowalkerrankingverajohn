@@ -1,12 +1,52 @@
 body {
-    margin: 0 1rem;
+    margin: 0 auto;
 }
 
-.rankingcasinoexplanimg{
-
-    img{
+.rankingcasinoexplanimg {
+    img {
         width: 100%;
         height: 100%;
+    }
+}
+
+.casinoinfopaymentintro {
+    overflow: auto;
+
+    .tablesticky {
+        display: inline-flex;
+
+        tbody,
+        td,
+        tfoot,
+        th,
+        thead,
+        tr {
+            height: 55px;
+            text-align: center !important;
+            vertical-align: middle !important;
+        }
+
+        .tablesticky_l {
+            position: sticky;
+            width: 130px;
+            top: 40px;
+            left: 0;
+            color: white;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            .casinoinfointro_payment {
+                img {
+                    width: 46px;
+                    height: 100%;
+                }
+            }
+        }
+
+        .tablesticky_r {
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
     }
 }
 
@@ -325,12 +365,12 @@ body {
 
 // オンラインカジノ決済方法
 .paymentway {
-    padding: 1rem;
-    background-color: black;
+    padding: 0.5rem;
+    background-color: #ff3d7d;
     // background-image: -webkit-linear-gradient(bottom, #4b2880 0%, #5e3e90 25%, #754cb1 50%, #8d58dc 85%, #7952b3 100%);
 
     .paymentway_h2 {
-        font-size: 1.3rem;
+        font-size: 1.05rem;
         margin-bottom: 0rem;
         line-height: 1.5;
         text-align: left;
@@ -603,9 +643,9 @@ body {
     position: relative;
     // padding: 2px 5px 2px 50px;
     padding: 0.7em 0.7em 0em 0.7em;
-    color: #010101;/*文字色*/
-    background: #ffe5ee;/*背景色*/
-    border-bottom: solid 3px #ff3d7d;/*下線*/
+    color: #010101; /*文字色*/
+    background: #ffe5ee; /*背景色*/
+    border-bottom: solid 3px #ff3d7d; /*下線*/
 
     h2 {
         font-size: 1.5rem;
@@ -629,7 +669,7 @@ body {
         line-height: 40px;
         left: 0em;
         // top: 40%;
-        top:50%;
+        top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         border-radius: 50%;
