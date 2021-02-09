@@ -8,14 +8,10 @@ body {
   height: 100%;
 }
 
-.casinoinfopaymentintro {
-  overflow: auto;
-}
-
 .casinoinfopaymentintro .tablesticky {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .casinoinfopaymentintro .tablesticky tbody,
@@ -27,6 +23,7 @@ body {
   height: 55px;
   text-align: center !important;
   vertical-align: middle !important;
+  word-break: keep-all;
 }
 
 .casinoinfopaymentintro .tablesticky .tablesticky_l {
@@ -35,7 +32,6 @@ body {
   width: 110px;
   top: 40px;
   left: 0;
-  color: white;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
@@ -49,15 +45,22 @@ body {
 }
 
 .casinoinfopaymentintro .tablesticky .tablesticky_r {
+  overflow: auto;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_r .tablestickyr_ps {
+  padding: 0 17px !important;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_r .tablestickyr_p10 {
+  padding: 0 10px !important;
 }
 
 .casinoinfopaymentintro .tablesticky .tablesticky_r td {
-  width: 60px;
+  padding: 0 32px;
 }
 
 .game_info {

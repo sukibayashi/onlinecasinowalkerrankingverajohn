@@ -10,10 +10,8 @@ body {
 }
 
 .casinoinfopaymentintro {
-    overflow: auto;
-
     .tablesticky {
-        display: inline-flex;
+        display: flex;
 
         tbody,
         td,
@@ -24,6 +22,7 @@ body {
             height: 55px;
             text-align: center !important;
             vertical-align: middle !important;
+            word-break: keep-all;
         }
 
         .tablesticky_l {
@@ -31,7 +30,6 @@ body {
             width: 110px;
             top: 40px;
             left: 0;
-            color: white;
             flex-grow: 0;
             flex-shrink: 0;
 
@@ -44,11 +42,19 @@ body {
         }
 
         .tablesticky_r {
+            overflow: auto;
             flex-grow: 0;
-            flex-shrink: 0;
 
-            td{
-                width: 60px;
+            .tablestickyr_ps{
+                padding: 0 17px !important;
+            }
+
+            .tablestickyr_p10{
+                padding: 0 10px !important;
+            }
+
+            td {
+                padding: 0 32px;
             }
         }
     }
