@@ -10,8 +10,10 @@ body {
 }
 
 .casinoinfopaymentintro {
+    overflow: auto;
+
     .tablesticky {
-        display: flex;
+        display: inline-flex;
 
         tbody,
         td,
@@ -42,8 +44,12 @@ body {
         }
 
         .tablesticky_r {
-            overflow: auto;
             flex-grow: 0;
+            flex-shrink: 0;
+
+            td{
+                width: 60px;
+            }
         }
     }
 }

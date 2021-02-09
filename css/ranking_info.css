@@ -8,10 +8,14 @@ body {
   height: 100%;
 }
 
+.casinoinfopaymentintro {
+  overflow: auto;
+}
+
 .casinoinfopaymentintro .tablesticky {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .casinoinfopaymentintro .tablesticky tbody,
@@ -45,10 +49,15 @@ body {
 }
 
 .casinoinfopaymentintro .tablesticky .tablesticky_r {
-  overflow: auto;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.casinoinfopaymentintro .tablesticky .tablesticky_r td {
+  width: 60px;
 }
 
 .game_info {
