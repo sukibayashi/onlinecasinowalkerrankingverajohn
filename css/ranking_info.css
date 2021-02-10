@@ -23,15 +23,23 @@ body {
 }
 
 .casinoinfopayment_arrow {
+  display: none;
   color: #86868b;
   float: right;
   padding-bottom: 20px;
+}
+
+.casinoinfopaymentintro {
+  font-size: 13px;
 }
 
 .casinoinfopaymentintro .tablesticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .casinoinfopaymentintro .tablesticky tbody,
@@ -49,7 +57,7 @@ body {
 .casinoinfopaymentintro .tablesticky .tablesticky_l {
   position: -webkit-sticky;
   position: sticky;
-  width: 110px;
+  width: 100px;
   top: 40px;
   left: 0;
   -webkit-box-flex: 0;
@@ -83,6 +91,11 @@ body {
   padding: 0 32px;
 }
 
+.ranking_point_img img {
+  width: 100%;
+  height: 100%;
+}
+
 .casino_content_h2 {
   font-size: 1rem;
   line-height: 1.5;
@@ -99,45 +112,78 @@ body {
 }
 
 .casino_content_kiji {
-  width: 100%;
+  border-left: 32px solid #fff;
+  border-right: 32px solid #fff;
+}
+
+.casino_content_kiji .text-center {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px 0;
-  color: #ff3d7d;
 }
 
-.casino_content_kiji h3 {
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  overflow: hidden;
-  margin: -5px -8px 0 -8px;
-  width: 450px;
+.casino_content_kiji .text-center h3 {
+  background-color: #fff;
+  z-index: 1;
   font-size: 1.2rem;
   font-weight: bold;
+  color: #ff3d7d;
+  padding: 0 16px;
 }
 
-.casino_content_kiji h3:before,
-.casino_content_kiji h3::after {
+.casino_content_kiji .text-center::after {
   content: "";
+  border-top: 3px solid #ff3d7d;
   position: absolute;
   width: 100%;
-  margin-top: -2px;
-  border-top: 3px solid;
-  top: 50%;
+  bottom: 16px;
+  left: 0px;
 }
 
-.casino_content_kiji h3::before {
-  -webkit-transform: translate(-100%, 0);
-  transform: translate(-100%, 0);
-  margin-left: -12px;
+#casinobasicinfo .casinobasicinfo_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ff3d7d;
+  padding: 11px;
 }
 
-.casino_content_kiji h3::after {
-  margin-left: 12px;
+#casinobasicinfo .casinobasicinfo_title img {
+  width: 18px;
+  height: 21px;
+  fill: #fff;
+}
+
+#casinobasicinfo .casinobasicinfo_title h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0rem;
+  margin-left: 6px;
+}
+
+#casinobasicinfo .casinobasicinfoimg img {
+  width: 100%;
+  height: 100%;
+}
+
+#casinobasicinfo .casinobasicinfo_table {
+  font-size: 15px;
+}
+
+#casinobasicinfo .casinobasicinfo_table th {
+  width: 110px;
+  text-align: center;
+  vertical-align: middle !important;
+  background-color: #f2f2f2;
+}
+
+#casinobasicinfo .casinobasicinfo_table td {
+  vertical-align: middle !important;
 }
 
 .casino_about_title {
@@ -514,42 +560,42 @@ body {
   float: right;
 }
 
-.casino_kiji {
+.casino_kijiall {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.casino_kijiall .casino_kiji {
   border-top: 1px solid #f0f0f0;
 }
 
-.casino_kiji .row {
+.casino_kijiall .casino_kiji .row {
   text-decoration: none;
   padding: 15px 0px;
 }
 
-.casino_kiji .row .casino_kiji_title {
+.casino_kijiall .casino_kiji .row .casino_kiji_title {
   font-weight: bold;
 }
 
-.casino_kiji .row .casino_kiji_description {
-  display: none;
-}
-
-.casino_kiji .row .casino_kiji_time {
+.casino_kijiall .casino_kiji .row .casino_kiji_time {
   color: #9e9e9e;
   font-size: 0.8rem;
 }
 
-.casino_kiji .row .casino_kiji_IMG {
+.casino_kijiall .casino_kiji .row .casino_kiji_IMG {
   padding-left: 0%;
 }
 
-.casino_kiji .row .casino_kiji_IMG br {
+.casino_kijiall .casino_kiji .row .casino_kiji_IMG br {
   display: none;
 }
 
-.casino_kiji .row .casino_kiji_IMG img {
+.casino_kijiall .casino_kiji .row .casino_kiji_IMG img {
   border-radius: 0.3rem;
   width: 100%;
 }
 
-.casino_kiji .row:hover {
+.casino_kijiall .casino_kiji .row:hover {
   background-color: #f9f9f9;
 }
 
@@ -935,5 +981,35 @@ body {
           padding-inline-start: 10%;
   list-style-type: decimal;
   line-height: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .casinoinfopayment_arrow {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .ranking_point .ranking_point_title {
+    font-size: 1rem;
+  }
+  .casino_content_kiji {
+    border-left: 0.5rem solid #fff;
+    border-right: 0.5rem solid #fff;
+  }
+  .casino_content_kiji .text-center h3 {
+    padding: 0 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .casino_content_kiji {
+    border-left: 0rem solid #fff;
+    border-right: 0rem solid #fff;
+  }
+  .casino_content_kiji .text-center h3 {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
 }
 /*# sourceMappingURL=ranking_info.css.map */

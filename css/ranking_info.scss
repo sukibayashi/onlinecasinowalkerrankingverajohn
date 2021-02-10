@@ -27,14 +27,18 @@ body {
 
 // 決済方法について
 .casinoinfopayment_arrow {
+    display: none;
     color: #86868b;
     float: right;
     padding-bottom: 20px;
 }
 
 .casinoinfopaymentintro {
+    font-size: 13px;
+
     .tablesticky {
         display: flex;
+        justify-content: center;
 
         tbody,
         td,
@@ -50,7 +54,7 @@ body {
 
         .tablesticky_l {
             position: sticky;
-            width: 110px;
+            width: 100px;
             top: 40px;
             left: 0;
             flex-grow: 0;
@@ -83,6 +87,13 @@ body {
     }
 }
 
+.ranking_point_img {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
 // 目次
 .casino_content_h2 {
     font-size: 1rem;
@@ -101,44 +112,79 @@ body {
 
 // オンラインカジノ最新記事
 .casino_content_kiji {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    color: #ff3d7d;
+    border-left: 32px solid #fff;
+    border-right: 32px solid #fff;
 
-    h3 {
-        -ms-transform: translate(0, -50%);
-        -webkit-transform: translate(0, -50%);
-        transform: translate(0, -50%);
-        overflow: hidden;
-        margin: -5px -8px 0 -8px;
-        width: 450px;
-        font-size: 1.2rem;
-        font-weight: bold;
+    .text-center {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            background-color: #fff;
+            z-index: 1;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ff3d7d;
+            padding: 0 16px;
+        }
     }
 
-    h3:before,
-    h3::after {
+    .text-center::after {
         content: "";
+        border-top: 3px solid #ff3d7d;
         position: absolute;
         width: 100%;
-        margin-top: -2px;
-        border-top: 3px solid;
-        top: 50%;
-    }
-
-    h3::before {
-        -ms-transform: translate(-100%, 0);
-        -webkit-transform: translate(-100%, 0);
-        transform: translate(-100%, 0);
-        margin-left: -12px;
-    }
-
-    h3::after {
-        margin-left: 12px;
+        bottom: 16px;
+        left: 0px;
     }
 }
+
+// オンラインカジノ基本情報
+#casinobasicinfo {
+    .casinobasicinfo_title {
+        display: flex;
+        background: #ff3d7d;
+        padding: 11px;
+
+        img {
+            width: 18px;
+            height: 21px;
+            fill: #fff;
+        }
+        h3 {
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: bold;
+            margin-bottom: 0rem;
+            margin-left: 6px;
+        }
+    }
+
+    .casinobasicinfoimg {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .casinobasicinfo_table {
+        font-size: 15px;
+
+        th {
+            width: 110px;
+            text-align: center;
+            vertical-align: middle !important;
+            background-color: #f2f2f2;
+        }
+
+        td{
+            vertical-align: middle !important;
+        }
+    }
+}
+
+// ------------------------------------------------------------
 
 .casino_about_title {
     background-color: #ff3d7d;
@@ -480,42 +526,42 @@ body {
 }
 
 // オンラインカジノ記事
-.casino_kiji {
-    border-top: 1px solid #f0f0f0;
+.casino_kijiall {
+    border-bottom: 1px solid #f0f0f0;
 
-    .row {
-        text-decoration: none;
-        padding: 15px 0px;
+    .casino_kiji {
+        border-top: 1px solid #f0f0f0;
 
-        .casino_kiji_title {
-            font-weight: bold;
-        }
+        .row {
+            text-decoration: none;
+            padding: 15px 0px;
 
-        .casino_kiji_description {
-            display: none;
-        }
-
-        .casino_kiji_time {
-            color: #9e9e9e;
-            font-size: 0.8rem;
-        }
-
-        .casino_kiji_IMG {
-            padding-left: 0%;
-
-            br {
-                display: none;
+            .casino_kiji_title {
+                font-weight: bold;
             }
 
-            img {
-                border-radius: 0.3rem;
-                width: 100%;
+            .casino_kiji_time {
+                color: #9e9e9e;
+                font-size: 0.8rem;
+            }
+
+            .casino_kiji_IMG {
+                padding-left: 0%;
+
+                br {
+                    display: none;
+                }
+
+                img {
+                    border-radius: 0.3rem;
+                    width: 100%;
+                }
             }
         }
-    }
 
-    .row:hover{
-        background-color: #f9f9f9;;
+        .row:hover {
+            background-color: #f9f9f9;
+        }
     }
 }
 
@@ -906,5 +952,42 @@ body {
         padding-inline-start: 10%;
         list-style-type: decimal;
         line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .casinoinfopayment_arrow {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .ranking_point .ranking_point_title {
+        font-size: 1rem;
+    }
+
+    .casino_content_kiji {
+        border-left: 0.5rem solid #fff;
+        border-right: 0.5rem solid #fff;
+
+        .text-center {
+            h3 {
+                padding: 0 8px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .casino_content_kiji {
+        border-left: 0rem solid #fff;
+        border-right: 0rem solid #fff;
+
+        .text-center {
+            h3 {
+                font-size: 1rem;
+                padding: 0 8px;
+            }
+        }
     }
 }
