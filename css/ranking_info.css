@@ -83,182 +83,6 @@ body {
   padding: 0 32px;
 }
 
-.game_info {
-  width: 100%;
-  height: 420px;
-  border-radius: 0.25;
-  -webkit-box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
-  background: white;
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.game_info p {
-  display: none;
-}
-
-.wave {
-  opacity: 0.4;
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  background: #ff3d7d;
-  width: 120%;
-  height: 30rem;
-  margin-left: -65%;
-  margin-top: -70%;
-  -webkit-transform-origin: 50% 48%;
-          transform-origin: 50% 48%;
-  border-radius: 45%;
-  -webkit-animation: drift 10000ms infinite linear;
-          animation: drift 10000ms infinite linear;
-}
-
-.wave.-three {
-  -webkit-animation: drift 20000ms infinite linear;
-          animation: drift 20000ms infinite linear;
-}
-
-.wave.-two {
-  -webkit-animation: drift 15000ms infinite linear;
-          animation: drift 15000ms infinite linear;
-  opacity: 0.1;
-  background: yellow;
-}
-
-.box:after {
-  content: "";
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ee88aa), color-stop(80%, rgba(221, 238, 255, 0)), to(rgba(255, 255, 255, 0.5)));
-  background: linear-gradient(to bottom, #ee88aa, rgba(221, 238, 255, 0) 80%, rgba(255, 255, 255, 0.5));
-  z-index: 11;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.game_scroe {
-  position: absolute;
-  bottom: 45%;
-  width: 100%;
-  z-index: 1;
-  line-height: 300px;
-  text-align: center;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-  color: white;
-  text-transform: uppercase;
-  font-family: "Playfair Display", serif;
-  font-size: 6rem;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-}
-
-.game_star {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  top: 31%;
-  letter-spacing: 0.2rem;
-}
-
-.ratingStar {
-  color: #ffcc00;
-}
-
-@-webkit-keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes drift {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-.game_info_bottom {
-  position: absolute;
-  width: 100%;
-  top: 65%;
-  padding: 0% 5% 0 5%;
-}
-
-.game_info_detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.game_info_detail .game_info_title {
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.game_info_detail .progress {
-  margin: 3px;
-  width: 45%;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.verajohn_blue {
-  background-color: #ff6500 !important;
-}
-
-@media screen and (max-width: 767px) {
-  .casino_card {
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-}
-
-.card-background {
-  position: absolute;
-  top: 17%;
-}
-
-.card-header {
-  padding: 0.75rem 0.5rem;
-  text-shadow: 1px 1px 5px black;
-}
-
 .casino_content_h2 {
   font-size: 1rem;
   line-height: 1.5;
@@ -275,8 +99,45 @@ body {
 }
 
 .casino_content_kiji {
-  font-size: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  color: #ff3d7d;
+}
+
+.casino_content_kiji h3 {
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  overflow: hidden;
+  margin: -5px -8px 0 -8px;
+  width: 450px;
+  font-size: 1.2rem;
   font-weight: bold;
+}
+
+.casino_content_kiji h3:before,
+.casino_content_kiji h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin-top: -2px;
+  border-top: 3px solid;
+  top: 50%;
+}
+
+.casino_content_kiji h3::before {
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  margin-left: -12px;
+}
+
+.casino_content_kiji h3::after {
+  margin-left: 12px;
 }
 
 .casino_about_title {
@@ -653,52 +514,43 @@ body {
   float: right;
 }
 
-.casino_kiji_all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.casino_kiji {
+  border-top: 1px solid #f0f0f0;
 }
 
-.casino_kiji_all .casino_kiji_IMG {
-  padding-left: 0%;
-}
-
-.casino_kiji_all .casino_kiji_IMG br {
-  display: none;
-}
-
-.casino_kiji_all .casino_kiji_IMG img {
-  width: 100%;
-}
-
-.casino_kiji_all .casino_kiji_text {
-  padding-left: 2px;
-}
-
-.casino_kiji_all .casino_kiji_text p {
-  display: none;
-}
-
-.casino_kiji_all .casino_kiji_text a {
-  color: black;
+.casino_kiji .row {
   text-decoration: none;
+  padding: 15px 0px;
 }
 
-.casino_kiji_all .casino_kiji_text a :hover {
-  color: #dc0610;
-}
-
-.casino_kiji_all .casino_kiji_text .casino_kiji_title {
+.casino_kiji .row .casino_kiji_title {
   font-weight: bold;
 }
 
-.casino_kiji_all .casino_kiji_text .casino_kiji_description {
+.casino_kiji .row .casino_kiji_description {
   display: none;
 }
 
-.casino_kiji_all .casino_kiji_text .casino_kiji_time {
+.casino_kiji .row .casino_kiji_time {
   color: #9e9e9e;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+}
+
+.casino_kiji .row .casino_kiji_IMG {
+  padding-left: 0%;
+}
+
+.casino_kiji .row .casino_kiji_IMG br {
+  display: none;
+}
+
+.casino_kiji .row .casino_kiji_IMG img {
+  border-radius: 0.3rem;
+  width: 100%;
+}
+
+.casino_kiji .row:hover {
+  background-color: #f9f9f9;
 }
 
 .casino_about_ul ul {
