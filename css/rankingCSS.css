@@ -112,7 +112,7 @@ img:not([src]) {
 .ranking_container .container-sm,
 .ranking_container .container-xl,
 .ranking_container .container-xxl {
-  max-width: 1200px;
+  max-width: 1100px;
 }
 
 .ranking_point {

@@ -22,6 +22,10 @@ body {
   line-height: 1.42;
 }
 
+.casinoaboutpayment {
+  margin-top: 40px;
+}
+
 .casinoinfopayment_arrow {
   display: none;
   color: #86868b;
@@ -88,7 +92,7 @@ body {
 }
 
 .casinoinfopaymentintro .tablesticky .tablesticky_r td {
-  padding: 0 32px;
+  padding: 0 30px;
 }
 
 .ranking_point_img img {
@@ -191,7 +195,7 @@ body {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
   color: white;
-  padding: 3% 3%;
+  padding: 2% 3%;
 }
 
 .casino_about_ul {
@@ -356,7 +360,7 @@ body {
 }
 
 .paymentway {
-  padding: 0.5rem;
+  padding: 0.7rem;
   background-color: #ff3d7d;
 }
 
@@ -624,7 +628,7 @@ body {
           text-decoration-line: none;
 }
 
-.point_1 {
+.recommendpoints {
   position: relative;
   padding: 0.7em 0.7em 0em 0.7em;
   color: #010101;
@@ -635,33 +639,9 @@ body {
   /*下線*/
 }
 
-.point_1 h2 {
-  font-size: 1.5rem;
-  font-weight: bolder;
-  margin-left: 40px;
-}
-
-.point_1 ::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0a1";
-  display: inline-block;
-  line-height: 40px;
-  position: absolute;
-  padding: 0em;
-  color: white;
-  background: #ff6363;
-  font-weight: 900;
-  width: 40px;
-  text-align: center;
-  height: 40px;
-  line-height: 40px;
-  left: 0em;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border-radius: 50%;
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
-          box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.29);
+.recommendpoints h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .point_2 {
@@ -670,7 +650,7 @@ body {
 }
 
 .point_2 h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bolder;
 }
 
